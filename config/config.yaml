@@ -1,0 +1,45 @@
+exchange: binance
+trading_mode: spot  # Changed from 'live' to 'spot'
+risk_per_trade: 0.01  # 1% risk per trade
+
+api_keys:
+  binance:
+    api_key: "Hwtj20WKN9PU5ySWtf0F3cGZyD1Gq8D5XkoYQ8vX0Rsazw3WMFJSRun4VhP5iZad"
+    api_secret: "mWeuYdiS2vkTOKuNMd1pgDodxYWiUcioo6M9I3UIEjeXoWszT3Wpqf6GToLIYSNB"
+
+trading_pairs:
+  - "NEIRO/USDT"
+  - "SUI/USDT"
+  - "SEI/USDT"
+  - "DOGE/USDT"
+  - "PIXEL/USDT"
+  - "PEPE/USDT"
+
+timeframes:
+  primary: "15m"
+  secondary: "1m"
+
+# Risk Management Settings
+max_open_trades: 6  # Reduced to manage risk
+max_drawdown: 0.10  # 10% maximum drawdown
+position_size_limit: 0.10  # Reduced to 10% to manage risk
+
+# Logging and Monitoring
+logging:
+  level: INFO
+  file: "logs/trading_bot.log"
+
+# Trading Strategy Configuration
+strategy:
+  min_confidence: 0.6  # Minimum confidence for trade execution
+  indicators:
+    rsi:
+      buy_threshold: 30
+      sell_threshold: 70
+    macd:
+      crossover_required: true
+    ema:
+      short_window: 12
+      long_window: 26
+    adx:
+      trend_strength_threshold: 25

@@ -1,0 +1,19 @@
+{
+    "default_strategy": {
+        "indicators": {
+            "rsi": {
+                "period": 14,
+                "overbought": 70,
+                "oversold": 30
+            },
+            "moving_averages": {
+                "short_period": 20,
+                "long_period": 50
+            }
+        },
+        "position_sizing": {
+            "initial_risk_percentage": 1.0,
+            "max_trades": 3
+        }
+    }
+}
