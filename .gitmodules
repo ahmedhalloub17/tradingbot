@@ -1,0 +1,3 @@
+[submodule "src/dashboard"]
+	path = src/dashboard
+	url = https://github.com/ahmedhalloub17/tradingbot.git
