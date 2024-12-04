@@ -4,8 +4,8 @@ risk_per_trade: 0.01  # 1% risk per trade
 
 api_keys:
   binance:
-    api_key: "Hwtj20WKN9PU5ySWtf0F3cGZyD1Gq8D5XkoYQ8vX0Rsazw3WMFJSRun4VhP5iZad"
-    api_secret: "mWeuYdiS2vkTOKuNMd1pgDodxYWiUcioo6M9I3UIEjeXoWszT3Wpqf6GToLIYSNB"
+    api_key: ""
+    api_secret: ""
 
 trading_pairs:
   - "NEIRO/USDT"
